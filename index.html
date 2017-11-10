@@ -2,87 +2,115 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
 
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/plugins.css" />
 
-        <link rel="stylesheet" href="assets/css/raleway-webfont.css" />
+    <link rel="stylesheet" href="assets/css/raleway-webfont.css" />
 
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+    <div class='preloader'>
+        <div class='loaded'>&nbsp;</div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html" style="padding: 0px 0px;">
+                <a class="navbar-brand" href="index.html" style="padding: 0px 0px;">
                         <img src="assets/images/logo.png" class="header-logo" alt="" /></a>
-                </div>
+            </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
 
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <!--<li><a href="#project">Portfolios</a></li>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li>
+                        <div class="dropdown" onclick="document.getElementById('myDropdown').classList.toggle('show');">
+                            <a class="dropbtn" onclick="myFunction();">ISSUES
+                             <i class="fa fa-caret-down"></i>
+                             </a>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#ethics">Campaign Finance/Ethics</a>
+                                <a href="#economy">Economy</a>
+                                <a href="#education">Education</a>
+                                <a href="#internet">Internet Access</a>
+                                <a href="#healthcare">Healthcare</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#events">Campaign Events</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                    <!--<li><a href="#project">Portfolios</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>-->
 
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-        <!--Home page style-->
-        <header id="home" class="home">
-            <div class="overlay-img">
-                <div class="container">
+    <!--Home page style-->
+    <header id="home" class="home">
+        <div class="overlay-img">
+            <div class="container">
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="home-content">
-                            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="home-content">
                         </div>
                     </div>
-
                 </div>
+
             </div>
-        </header>
+        </div>
+    </header>
 
 
     <!-- Sections -->
-    <section id="our-client" class="sections different-bg">
+    <section id="media" class="sections different-bg">
         <div class="container text-center">
 
             <!-- Example row of columns -->
@@ -99,9 +127,8 @@
                             <div class="item active">
                                 <div class="client-content">
                                     <h3>What Our Clients are saying</h3>
-                                    <p>
-                                        “It was fun creating this until joe didn't give me the stuff
-                                        I needed to complete this carousel”
+                                    <p class="carousel-text">
+                                        “It was fun creating this until joe didn't give me the stuff I needed to complete this carousel”
                                     </p>
 
                                     <div class="client-basicinfo">
@@ -112,10 +139,10 @@
                                 </div>
                             </div>
 
-							<div class="item">
+                            <div class="item">
                                 <div class="client-content">
                                     <h3>What Our Clients are saying</h3>
-                                    <p>
+                                    <p class="carousel-text">
                                         “Not having the things I need to complete a website makes Michael a very Mad person”
 
                                     </p>
@@ -128,12 +155,12 @@
                                 </div>
                             </div>
 
-							<div class="item">
+                            <div class="item">
                                 <div class="client-content">
                                     <h3>What Our Clients are saying</h3>
-                                    <p>
+                                    <p class="carousel-text">
                                         “Here is an image of a pony”
-                                        <img src="http://www.singlewingmedia.com/blog/wp-content/uploads/2012/12/My-little-pony-mystic-no-saddle-touched-up.png"></img>
+                                        <img src=""></img>
                                     </p>
 
                                     <div class="client-basicinfo">
@@ -148,7 +175,7 @@
 
                         </div>
 
-						<!-- Indicators -->
+                        <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -162,17 +189,82 @@
                 </div>
 
             </div>
-        </div> <!-- /container -->
+        </div>
+        <!-- /container -->
     </section>
 
-<section id="about" class="sections">
-    <h3> this is where we would put the about me if joe gave us an about
-    </h3>
+    <div id="issues">
+        <section id="ethics" class="sections">
+            <h2> Issues </h2>
+            <h3 class="issues-header"> Campaign Finance/Ethics
+            </h3>
+            <p class="issues-text">In order to return the power of self-government back to the people of Missouri we need real campaign finance
+                reform. Lobbyists, dark money donors and political insiders currently have the ability to influence our government
+                more than the constituents of our representatives. In order to give the power back to you, the people of
+                Missouri, we need to ban all lobbyist gifts to the General Assembly and lower contribution limits for legislative
+                candidates. The Clean Missouri Initiative is a step in the right direction but we can make Missouri the model
+                for ethical standards in this nation, if we pass strict campaign finance reform and make our representatives
+                beholden to their constituents and not at the mercy of big donor money.
+            </p>
+        </section>
+        <section id="economy" class="sections">
+            <h3 class="issues-header"> Economy
+            </h3>
+            <p class="issues-text"> Growing the middle class is essential for a thriving economy. Cutting corporate taxes will never put real money
+                into middle class families’ pockets. Only by raising minimum wage and by giving the middle class a tax break
+                can we ensure that Missourians have the ability to continue to drive the economic engine of our state. Giant
+                corporations with huge CEO salaries are often the employers who pay the least to their employee’s. Missouri’s
+                workers are worth more than the current minimum wage; let’s give them a pay raise. A home healthcare worker
+                is not unskilled, the hotel room cleaner is not unskilled and they deserve to earn a living wage. We need
+                to turn existing jobs into good jobs and when they earn more money they will become customers to our small
+                businesses, which will allow them to expand and provide more workers with good paying jobs. A thriving middle
+                class is the source of growth in our economy.
+            </p>
+        </section>
+        <section id="education" class="sections">
+            <h3 class="issues-header"> Education
+            </h3>
+            <p class="issues-text"> Education is the pathway for a better life and the future of Missouri deserves a high quality education. We need
+                to make sure every budget fully funds public education and early childhood development programs. With industries
+                changing quickly, our students need the skills necessary to compete in the economy of the future. We need
+                to help our rural schools embrace technology programs that teach our students those necessary skills. We
+                want our children to be successful and have greater opportunities, but this requires the necessary investment
+                on our part.
+            </p>
+        </section>
+        <section id="internet" class="sections">
+            <h3 class="issues-header"> Internet Access
+            </h3>
+            <p class="issues-text"> Internet access in rural Missouri is a must in this economy. In order for our small businesses to compete they
+                need reliable, high speed internet access. Many parts of our rural areas don’t have the ability to connect
+                to high speed internet. Missouri can be on the forefront of rural internet access by offering broadband internet
+                to our more remote areas, allowing small businesses in rural towns the ability to join the global market.
+            </p>
+        </section>
+        <section id="healthcare" class="sections">
+            <h3 class="issues-header"> Healthcare
+            </h3>
+            <p class="issues-text">We need to fully expand Medicaid under the Affordable Care Act and give Missourians the ability to have access
+                to good affordable insurance. We should work to fully fund the MORx program that lowered the cost of prescription
+                drugs for thousands of Missourians.
+            </p>
+        </section>
+    </div>
 
-</section>
+    <section id="events" class="sections">
+        <h3>Campaign Events</h3>
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+        </p>
+    </section>
+
+    <section id="bio" class="sections">
+        <h3>Bio</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</p>
+    </section>
 
 
-<!--<section id="contact" class="sections lightbg">
+    <!--<section id="contact" class="sections lightbg">
         <div class="container">
 
             <div class="heading-content text-center">
@@ -211,6 +303,22 @@
             </div>
         </div>
     </section>-->
+    <section id="social" Class="sections">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="">
+                <h4>Recent Posts</h4>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FElect-Joe-Register-372952439827265%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=187724174999" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="">
+                <h4>Twitter Feeds</h4>
+                <a class="twitter-timeline" href="https://twitter.com/miregister?ref_src=twsrc%5Etfw">Tweets by miregister</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
 
 
     <!--Footer-->
@@ -221,25 +329,11 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-first-content">
                         <!--<div class="logo"><img src="assets/images/footer-logo.png" alt="Company Logo" /></div>-->
-                        <p></p>
+                
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-mid-content">
-                        <h4>Recent Posts</h4>
 
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-mid-content">
-                        <h4>Twitter Feeds</h4>
-
-
-
-                    </div>
-                </div>
 
                 <!--<div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-last-content">
@@ -253,9 +347,9 @@
                         </div>
 
                     </div>-->
-                </div>
-
             </div>
+
+        </div>
 
 
 
@@ -263,15 +357,15 @@
 
     </footer>
 
-	<div class="scroll-top">
+    <div class="scroll-top">
 
-		<div class="scrollup">
-			<i class="fa fa-angle-double-up"></i>
-		</div>
+        <div class="scrollup">
+            <i class="fa fa-angle-double-up"></i>
+        </div>
 
-	</div>
+    </div>
 
-	<!--<footer class="copyright-footer">
+    <!--<footer class="copyright-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -294,4 +388,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
