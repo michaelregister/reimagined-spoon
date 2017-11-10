@@ -21,7 +21,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 /*==========================================
-PRE LOADER 
+PRE LOADER
 ==========================================*/
 .preloader {
     position: fixed;
@@ -893,7 +893,7 @@ input:-ms-input-placeholder {
 }
 
 .cd-timeline-img {
-    
+
     position: absolute;
     /*margin-top: 10px;*/
     top: 0;
@@ -1338,4 +1338,13 @@ input:-ms-input-placeholder {
 .scrollup:hover{
     color:#333;
     transform:scale(1.1);
-}	
+}
+.header-logo{
+    height:70px;
+}
+@media screen and (max-width: 400px) {
+    .header-logo{
+        height: 52px;
+        position: absolute;
+    }
+}
