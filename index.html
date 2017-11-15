@@ -61,7 +61,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="active"><a href="#home">Home</a></li>
+                    <li class="active"><a href="#home">Home</a>
+                    </li>
                     <li><a href="#media">Media</a></li>
                     <li>
                         <div class="dropdown" onclick="document.getElementById('myDropdown').classList.toggle('show');">
@@ -82,8 +83,8 @@
                     <li><a href="#social">Social Media</a></li>
                     <!--<li><a href="#project">Portfolios</a></li>
                         <li><a href="#team">Team</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>-->
+                        <li><a href="#blog">Blog</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </div>
@@ -100,6 +101,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="home-content">
+                            <img class="headshot col-md-3 col-sm-12" src="assets/images/headshot2.jpg" />
+                            <div class="home-text-primary  col-md-9 col-sm-12">
+                                <span class="home-text-primary">"The people of this district deserve someone who will fight for them and for their children."</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,7 +115,7 @@
 
 
     <!-- Sections -->
-    <section id="media" class="sections different-bg">
+    <section id="media" class="sections different-bg media-section">
         <div class="container text-center">
 
             <!-- Example row of columns -->
@@ -118,7 +123,7 @@
                 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
 
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000">
 
 
                         <!-- Wrapper for slides -->
@@ -126,53 +131,36 @@
 
                             <div class="item active">
                                 <div class="client-content">
-                                    <h3>What Our Clients are saying</h3>
                                     <p class="carousel-text">
-                                        “It was fun creating this until joe didn't give me the stuff I needed to complete this carousel”
+                                        <span class="col-md-12 quote script">
+                                    “Only a life in the service of others is worth living.” 
+                                    </span>
+                                        <span class="quoted">– Albert Einstein</span>
                                     </p>
-
-                                    <div class="client-basicinfo">
-                                        <h6>John Doe</h6>
-                                        <a href="#">www.yourwebsite.zt</a>
-                                    </div>
-
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="client-content">
-                                    <h3>What Our Clients are saying</h3>
                                     <p class="carousel-text">
-                                        “Not having the things I need to complete a website makes Michael a very Mad person”
-
+                                        <span class="col-md-12 quote script">
+                                    “You may never know what results from you action. But if you do nothing, there will be no results” 
+                                    </span>
+                                        <span class="quoted">– Gandhi</span>
                                     </p>
-
-                                    <div class="client-basicinfo">
-                                        <h6>John Doe</h6>
-                                        <a href="#">www.yourwebsite.zt</a>
-                                    </div>
-
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="client-content">
-                                    <h3>What Our Clients are saying</h3>
                                     <p class="carousel-text">
-                                        “Here is an image of a pony”
-                                        <img src=""></img>
+                                        <span class="col-md-12 quote script">
+                                    “It’s easy to sit back and criticize government efforts to help ordinary people, but helping them is our responsibility.” 
+                                    </span>
+                                        <span class="quoted">– Robert F. Kennedy</span>
                                     </p>
-
-                                    <div class="client-basicinfo">
-                                        <h6>John Doe</h6>
-                                        <a href="#">www.yourwebsite.zt</a>
-                                    </div>
-
                                 </div>
                             </div>
-
-
-
                         </div>
 
                         <!-- Indicators -->
@@ -195,7 +183,7 @@
 
     <div id="issues">
         <section id="ethics" class="sections">
-            <h2> Issues </h2>
+            <h2 class="primary-header"> Issues </h2>
             <h3 class="issues-header"> Campaign Finance/Ethics
             </h3>
             <p class="issues-text">In order to return the power of self-government back to the people of Missouri we need real campaign finance
@@ -245,26 +233,61 @@
             <h3 class="issues-header"> Healthcare
             </h3>
             <p class="issues-text">We need to fully expand Medicaid under the Affordable Care Act and give Missourians the ability to have access
-                to good affordable insurance. We should work to fully fund the MORx program that lowered the cost of prescription
-                drugs for thousands of Missourians.
+                to good affordable insurance. Thousands of Missourians will benefit from an expanded Medicaid system in our
+                state, including many working families and rural Missourians struggling to make ends meet now. Providing
+                them with affordable insurance will help them stay healthy and continue working to lift themselves and their
+                families into a better economic situation. Helping those with mental illness and disabilities, students and
+                children and all of our communities get desperately needed and deserved healthcare is the right thing to
+                do. Medicaid expansion will help our hospitals by reducing the number of uninsured individuals and lowering
+                the cost of uncompensated care. It will bring jobs to healthcare services and with an increased income that
+                they will spend in our local economies. We should work to fully fund the MORx program that lowered the cost
+                of prescription drugs for thousands of Missourians. This program is vital to our senior population so they
+                don’t have to make the choice of filling their prescription, buying groceries or going without other necessities.
             </p>
         </section>
     </div>
 
     <section id="events" class="sections">
-        <h3>Campaign Events</h3>
-        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-        </p>
+        <h2 class="primary-header">Campaign Events</h2>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FElect-Joe-Register-372952439827265&tabs=events&width=340&height=244&small_header=false&adapt_container_width=false&hide_cover=true&show_facepile=false&appId"
+            width="100%" height="244" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </section>
 
     <section id="bio" class="sections">
-        <h3>Bio</h3>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-</p>
+        <h2 class="primary-header">Bio</h2>
+        <img src="assets/images/headshot2.jpg">
+        <p class="bio"> Joe Register is a small business owner from Macks Creek who is running for state representative in Missouri’s 123rd
+            district. The 123rd district will be an open seat that is currently held by Diane Franklin who is term limited
+            this election. A graduate of Macks Creek High School in 2000, Joe has worked hard to build a budding small business
+            and wants to bring that dedication and hard work to the General Assembly for the citizens of Missouri’s 123rd
+            district. Joe believes that small businesses and middle class families drive Missouri’s economy and will work
+            hard to ensure a thriving middle class in Missouri. Joe has labored on his wife’s family farm and knows the effort
+            Missouri’s farmers put in every day. He will work to make sure that the family farm has the representation in
+            Jefferson City, and the resources available to compete in the future economy. A member of the Camdenton United
+            Methodist Church and the United Methodist Men’s group, Joe’s faith guides him in all he does, from business dealings
+            to interactions with family, friends and those he meets for the first time. Joe lives in Macks Creek with his
+            wife, Dana and three children, Justin, Cole, and Lora.
+        </p>
+
     </section>
+    <section id="social" Class="sections">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="">
+                <h4>Recent Posts</h4>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FElect-Joe-Register-372952439827265%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=187724174999"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+        </div>
 
-
-    <!--<section id="contact" class="sections lightbg">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="">
+                <h4>Twitter Feeds</h4>
+                <a class="twitter-timeline" href="https://twitter.com/joeregister_mo?ref_src=twsrc%5Etfw">Tweets by Joe Register</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="sections lightbg">
         <div class="container">
 
             <div class="heading-content text-center">
@@ -277,7 +300,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
 
-                    <form>
+                    <!--<form method=POST action="mailto:michael.register@hotmail.com">
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name*">
@@ -297,29 +320,64 @@
                         </div>
 
                         <div class="submit-btn"><button type="submit" class="btn btn-default abt-btn">Submit Query</button></div>
+                    </form>-->
+                    <form method="post" action="https://formspree.io/michael.register@hotmail.com" enctype="text/plain">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input class="form-control" name="Name" placeholder="Name" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input class="form-control" name="E-Mail Address" placeholder="E-mail" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="Message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="submit-btn"><button type="submit" class="btn btn-default abt-btn"  value="Send" >
+                            Submit Query</button></div>
+
+                        <input class="form-control" type="hidden" name="body" />
                     </form>
 
+                    <script>
+                        var form = document.getElementsByTagName('form')[0];
+                        form.addEventListener('submit', contact, false);
+                        function contact(e) {
+                            // Prevent Default Form Submission
+                            e.preventDefault();
+
+                            var target = e.target || e.srcElement;
+                            var i = 0;
+                            var message = '';
+
+                            // Loop Through All Input Fields
+                            for (i = 0; i < target.length; ++i) {
+                                // Check to make sure it's a value. Don't need to include Buttons
+                                if (target[i].type != 'text' && target[i].type != 'textarea') {
+                                    // Skip to next input since this one doesn't match our rules
+                                    continue;
+                                }
+
+                                // Add Input Name and value followed by a line break
+                                message += target[i].name + ': ' + target[i].value + "\r\n";
+                            }
+                            // Modify the hidden body input field that is required for the mailto: scheme
+                            target.elements["body"].value = message;
+
+                            // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+                            this.submit();
+                        }
+                    </script>
                 </div>
             </div>
         </div>
-    </section>-->
-    <section id="social" Class="sections">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="">
-                <h4>Recent Posts</h4>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FElect-Joe-Register-372952439827265%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=187724174999" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="">
-                <h4>Twitter Feeds</h4>
-                <a class="twitter-timeline" href="https://twitter.com/miregister?ref_src=twsrc%5Etfw">Tweets by miregister</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </div>
     </section>
-
 
     <!--Footer-->
     <footer id="footer" class="sections footer different-bg">
@@ -328,14 +386,21 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-first-content">
-                        <!--<div class="logo"><img src="assets/images/footer-logo.png" alt="Company Logo" /></div>-->
-                
+                        <div class="logo"><img src="assets/images/logo.png" alt="Logo" /></div>
+
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-9 col-xs-12">
+                    <div class="footer-last-content">
+                        <p>Paid for by The Committee to Elect Joe Register</p>
+                    </div>
+                </div class="col-md-6 col-sm-9 col-xs-12">
+                <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FElect-Joe-Register-372952439827265%2F&width=0&height=80&layout=standard&size=large&show_faces=true&appId=187724174999"
+                    width="80" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+                </iframe>
+            </div>
 
-
-
-                <!--<div class="col-md-3 col-sm-6 col-xs-12">
+            <!--<div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-last-content">
                         <h4>Our Address</h4>
                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta </p>
@@ -347,7 +412,7 @@
                         </div>
 
                     </div>-->
-            </div>
+        </div>
 
         </div>
 
