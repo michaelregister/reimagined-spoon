@@ -30,6 +30,27 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="assets/contact/js/jquery.validate.js"></script>
+<script src="assets/contact/js/jquery.placeholder.js"></script>
+<script src="assets/contact/js/jquery.form.js"></script>
+<link rel="stylesheet" href="assets/contact/css/style.css">
+<script>
+$(function(){
+$('#contact').validate({
+submitHandler: function(form) {
+    $(form).ajaxSubmit({
+    url: 'assets/contact/process.php',
+    success: function() {
+    $('#contact').hide();
+    $('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+    }
+    });
+    }
+});         
+});
+</script>
 </head>
 
 <body>
@@ -299,83 +320,38 @@
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+<form id="contact" method="post" action="">
+<fieldset>	
 
-                    <!--<form method=POST action="mailto:michael.register@hotmail.com">
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name*">
-                            </div>
-                        </div>
+<label for="name">Name</label>
+<input type="text" name="name" placeholder="Full Name" title="Enter your name" class="required">
 
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*">
-                            </div>
-                        </div>
+<label for="email">E-mail</label>
+<input type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
 
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <textarea class="form-control txt-area" rows="5" placeholder="Message . . ."></textarea>
-                            </div>
-                        </div>
+<label for="phone">Phone</label>
+<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
 
-                        <div class="submit-btn"><button type="submit" class="btn btn-default abt-btn">Submit Query</button></div>
-                    </form>-->
-                    <form method="post" action="https://formspree.io/michael.register@hotmail.com" enctype="text/plain">
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input class="form-control" name="Name" placeholder="Name" />
-                            </div>
-                        </div>
+<label for="website">Website</label>
+<input type="url" name="url" placeholder="http://">
 
-                        <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <input class="form-control" name="E-Mail Address" placeholder="E-mail" />
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="form-group">
-                                <textarea class="form-control" name="Message" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <br/>
-                        <div class="submit-btn"><button type="submit" class="btn btn-default abt-btn"  value="Send" >
-                            Submit Query</button></div>
+<label for="message">Question/Comment</label>
+<textarea name="message"></textarea>
 
-                        <input class="form-control" type="hidden" name="body" />
-                    </form>
+<input type="submit" name="submit" class="button" id="submit" value="Send Message" />
 
-                    <script>
-                        var form = document.getElementsByTagName('form')[0];
-                        form.addEventListener('submit', contact, false);
-                        function contact(e) {
-                            // Prevent Default Form Submission
-                            e.preventDefault();
+</fieldset>
+</form>
 
-                            var target = e.target || e.srcElement;
-                            var i = 0;
-                            var message = '';
-
-                            // Loop Through All Input Fields
-                            for (i = 0; i < target.length; ++i) {
-                                // Check to make sure it's a value. Don't need to include Buttons
-                                if (target[i].type != 'text' && target[i].type != 'textarea') {
-                                    // Skip to next input since this one doesn't match our rules
-                                    continue;
-                                }
-
-                                // Add Input Name and value followed by a line break
-                                message += target[i].name + ': ' + target[i].value + "\r\n";
-                            }
-                            // Modify the hidden body input field that is required for the mailto: scheme
-                            target.elements["body"].value = message;
-
-                            // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-                            this.submit();
-                        }
-                    </script>
-                </div>
+   
             </div>
+<script src="assets/contact/js/modernizr-min.js"></script>
+<script>
+if (!Modernizr.input.placeholder){
+      $('input[placeholder], textarea[placeholder]').placeholder();
+}
+</script>
+        </div>
         </div>
     </section>
 
